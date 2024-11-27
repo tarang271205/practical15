@@ -1,0 +1,44 @@
+Program: 15 Consider a situation where a user needs to analyze a set of numbers they input into 
+a system. Imagine a data entry operator who inputs 25 different numbers via the 
+keyboard. The goal is to develop a C program that processes these numbers to 
+determine specific characteristics: how many of the numbers are positive, how 
+many are negative, how many are even, and how many are odd. 
+Code: // Practical 15: Create Simple Sorting System For Entered Numbers. 
+ 
+#include <stdio.h> 
+ 
+ 
+int main() { 
+    int numbers[25];// Here Numbers Are Fixed. 
+    int positive= 0, negative= 0, even= 0, odd= 0; 
+ 
+    printf("Enter 25 Numbers:\n");// Taking 25 Numbers As A Input From User. 
+    for (int i = 0; i < 25; i++) { 
+        scanf("%d", &numbers[i]); 
+    } 
+ 
+    // Here Loop Stands For Sorting Numbers. 
+    for (int i = 0; i < 25; i++) { 
+        if (numbers[i] > 0) { 
+            positive++; 
+        } else if (numbers[i] < 0) { 
+            negative++; 
+        } 
+        if (numbers[i] % 2 == 0) { 
+          even++; 
+        } else { 
+            odd++; 
+        } 
+    } 
+ 
+//Print All The Results. 
+    printf("Your Results:\n"); 
+    printf("Total Positive numbers: %d\n", positive); 
+    printf("Total Negative numbers: %d\n", negative); 
+    printf("Total Even numbers: %d\n", even); 
+    printf("Total Odd numbers: %d\n", odd);
+     
+ 
+ 
+printf("\n\n\n24ce032_TARANG")
+}
